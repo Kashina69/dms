@@ -1,0 +1,23 @@
+# Frontend Modules Index
+
+| Module | Directory | Primary Components | Tags (Keywords) | Description |
+| --- | --- | --- | --- | --- |
+| Activity Logs | `src/activityLogs/` | `ActivityLogs.jsx`, `ActivityLogsTable.jsx`, `ActivityLogsForm.jsx`, `ActivityLogsModel.jsx` | activity-logs, audit-trail, user-actions, security-logs, history | Audit log inspection, activity filtering by user/date, and detailed request payload modal |
+| Api Config | `src/apiUrlPage/` | `Config.jsx` | api-config, backend-url, port, host-settings, connection | UI for updating and verifying the active backend API host and port |
+| Authentication | `src/auth/` | `Login.jsx` | auth, login, jwt, session, credentials, remember-me | User login authentication view with credential validation and session token persistence |
+| Dashboard | `src/dashboard/` | `Dashboard.jsx`, `DashboardTable.jsx` | dashboard, metrics, counters, series-table, drawal-status | High-level operations overview, vehicle load counts, series progress, and metric widgets |
+| Download Reports | `src/downloadReport/` | `DownloadReport.jsx` | reports, export, excel-export, pdf-report, download | Data export center for generating LTS, AMK, vehicle loading, and activity spreadsheets |
+| FAQ & Help | `src/faq/` | `FaqModule.jsx` | faq, help, user-guide, troubleshooting, manual | In-app searchable user manual and operational FAQ accordion |
+| Layout Shell | `src/layout/` | `LayoutPage.jsx` | layout, sidebar, topbar, navigation, outlet, header | Master application layout containing responsive sidebar, navigation links, and profile header |
+| Manage AMK Quantity | `src/manageAMKQuantity/` | `ManageAmkQuantity.jsx`, `ManageAMKQuantityTable.jsx`, `ManageAmkLotModal.jsx`, `ManageAMKQuantityFile.jsx` | amk, inventory, ammunition, stock, lots, condition-flags, excel-upload | Ammunition stock ledger, condition states (SER, UNSE, RMJ, SEG), lot breakdown & Excel upload |
+| Manage Driver & Vehicle | `src/manageDriver/` | `ManageDriver.jsx`, `DriverList.jsx`, `DriverForm.jsx`, `PrintDriverDetails.jsx`, `PrintMultipleDriverData.jsx` | driver, vehicle, convoy, check-in, gate-pass, ba-number, escort | Convoy vehicle and driver registration, capacity verification, and gate pass slip printing |
+| Manage Formation | `src/manageFormation/` | `ManageFormation.jsx`, `FormationList.jsx`, `FormationFormModal.jsx` | formation, unit, brigade, military-unit, fmn | Administration and CRUD operations for requesting military units and formations |
+| Manage LTS | `src/manageLts/` | `ManageLts.jsx`, `LtsList.jsx`, `CreateLtsForm.jsx`, `EditLts.jsx`, `PrintLtsDetils.jsx` | lts, voucher, issue-voucher, skt, dispatch, varieties | Load Tally Sheet issue voucher generation, SKT grouping, lot allocation, and printing |
+| Manage QR Codes | `src/manageQRCodes/` | `ManageQR.jsx`, `VarietiesQRTable.jsx`, `QRCodesForm.jsx`, `LotDetailsModal.jsx` | qr-codes, barcode, lot-qr, encrypted-qr, label-generation | Ammunition lot AES-encrypted QR code generation, listing, verification, and label printing |
+| Manage Series Time | `src/manageSeriesTime/` | `manageSeries.jsx`, `seriesTable.jsx` | series, shifts, time-intervals, series-config, operational-hours | Configuration of depot operational shifts and time-series interval slots |
+| Manage User | `src/manageUser/` | `ManageUser.jsx`, `UsersList.jsx`, `UserForm.jsx` | users, user-management, rbac, roles, permissions | User account management, role assignment (Admin, Operator, Clerk), and status toggling |
+| Settings Backup | `src/settings/backup/` | `Backup.jsx`, `BackupList.jsx` | backup, restore, database-dump, sql-backup, system-settings | Database backup snapshot trigger, archive history listing, and restoration |
+| Track & Loading | `src/track/` | `TrackLoading.jsx`, `TrackLoadingByID.jsx`, `AssignedLtsDetails.jsx`, `PrintAssignedLtsDetails.jsx` | track, loading, barcode-scanner, cargo-loading, gate-pass, checkout | Real-time lot scanning, cargo validation, duplicate prevention, and vehicle exit pass printing |
+| Manage Army Units | `src/manageArmyUnits/` | `ManageArmyUnits.jsx`, `ArmyUnitList.jsx`, `ArmyUnitFormModal.jsx`, `ArmyUnitDeleteModal.jsx` | army-units, units, military-units, unit-data, excel-upload, formation-filter | Army units management module with search, formation filter, dynamic CRUD modals, and Excel data import |
+| Export Sync History | `src/exportSyncHistory/` | `ExportSyncHistory.jsx`, `ExportSyncHistorySearch.jsx`, `ExportSyncHistoryTable.jsx`, `ExportSyncHistoryModal.jsx` | export-sync, sync-history, nfc-export, parent-depot, lot-sync | Export sync history log viewer with date/vehicle/depot filtering, lot detail modal, and raw payload inspect |
+
