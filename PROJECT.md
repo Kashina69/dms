@@ -412,4 +412,6 @@ This document is the business view of the same flow that is implemented in the a
 
 In other words, the real app flow is: UI screens create records in the database, the mobile app syncs those records, NFC tags carry the assignment state, and the gate checkout closes the physical movement with an audit trail. The document above is the plain-English layer on top of that implementation graph.
 
+- **Tonnage Report Calculation Rule (`sp_amk_report` / `downloadAmkreport`)**: In the AMK Tonnage report, actual given/loaded quantity is derived strictly from `variety_load_details` lot quantities where `load_status != 'Pending'` (i.e. `Partially Loaded` or `Loaded`). When an LTS is prepared or updated, default lots are auto-generated with `load_status = 'Pending'`; these represent unfulfilled requisition targets, not loaded cargo. If an item in an LTS requisition has no loaded lots or was not loaded/given ($y = 0$), its `QUANTITY` is reported as `0.00` and its `TONNAGE` is reported as `0.00` (`(0 * package_weight / ipq) / 1000 = 0`), instead of counting pending lots or falling back to the requested quantity (`variety_details.qty`).
+
 ---

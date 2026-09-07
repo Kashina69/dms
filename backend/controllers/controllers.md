@@ -7,7 +7,7 @@
 | AuthController | `authController.js` | auth, login, token, session, jwt, user, credentials, ap | Handles user authentication, credential validation, Ammunition Point (AP) session verification, and JWT token issuance |
 | BackupController | `backupController.js` | backup, database, restore, dump, sql, snapshot | Manages database backup generation, download, and restore procedures |
 | DashboardListViewController | `dashboardListViewController.js` | dashboard, list, view, summary, metrics, overview, chart | Aggregates summary and list metrics for dashboard and DRAWAL progress views |
-| DriverController | `driverController.js` | driver, crud, profile, status, driver-details | CRUD management and status tracking for registered drivers |
+| DriverController | `driverController.js` | driver, crud, profile, status, driver-details, amk-tonnage, download_amk, excel-export | CRUD management and status tracking for registered drivers, Drawal Excel generation, and AMK Tonnage report export |
 | DriverVehicleController | `driverVehicleController.js` | driver-vehicle, mapping, assignment, gate, load, checkout, convoy | Manages vehicle-driver associations, vehicle loading status, and checkout flows |
 | ExportSyncController | `exportSyncController.js` | export-sync, locations, data-sync, history, auto-import, nfc | Handles mobile export unique locations lookup, NFC lot data auto-import into AMK inventory, and export sync history listing |
 | FormationDetailsController | `formationDetails.js` | formation, unit, brigade, fleet, military, fmn, unit-assignment | Manages formation CRUD operations, Army Unit assignments, validations, and eager loading of units |

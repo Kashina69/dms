@@ -20,5 +20,5 @@
 | SktVarieties | `sktvarieties.js` | skt, variety, item-varieties, types, bridge | Bridge model linking SKT package sections to specific ammunition variety specifications |
 | User | `user.js` | user, account, auth, credentials, password, refresh-token | Stores user credentials, hashed passwords, role associations, and active status |
 | VarietyDetail | `varietydetail.js` | variety, ammunition-type, specification, ipq, weight | Details for distinct ammunition varieties (IPQ, package weight, loading point) |
-| VarietyLoadDetails | `varietyloaddetails.js` | variety-load, lot-load, vehicle-loading-status, load-status | Granular lot-level vehicle loading status (Pending, Partially Loaded, Loaded), condition, and timestamps |
+| VarietyLoadDetails | `varietyloaddetails.js` | variety-load, lot-load, vehicle-loading-status, load-status, pending, partially-loaded, loaded | Granular lot-level vehicle loading status (Pending = unfulfilled requisition target, Partially Loaded / Loaded = physically loaded cargo), condition, and timestamps |
 | VehicleType | `vehicletype.js` | vehicle-type, fleet, vehicle-category, 3-ton, 5-ton | Defines vehicle classifications and payload capacity configurations |

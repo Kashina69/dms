@@ -8,7 +8,7 @@
 | DriverVehicleAllServices | `driverVehicleAllServices.js` | driver-vehicle, bulk-driver, batch-ops | Bulk query and status update operations for driver-vehicle pairings |
 | DriverVehicleServices | `driverVehicleServices.js` | driver-vehicle, vehicle-mapping, driver-crud | Core operations for driver and vehicle records and check-in |
 | ExportSyncService | `exportSyncService.js` | export-sync, unique-locations, auto-import, sync-history | Retrieves unique storage locations, auto-imports batch lots, and queries paginated sync history |
-| FetchRecordsServices | `fecthRecordsServices.js` | fetch-records, complex-queries, multi-table, joins | Complex join queries and aggregated record retrieval |
+| FetchRecordsServices | `fecthRecordsServices.js` | fetch-records, complex-queries, multi-table, joins, sp_amk_report, fetchAmkListrecords | Complex join queries, aggregated driver-vehicle records, and sp_amk_report invocation for Tonnage report |
 | FetchRecordID | `fetchRecordID.js` | record-id, id-resolver, lookup | Helper service to resolve database entity IDs by attributes |
 | GateCheckoutSyncServices | `gateCheckoutSyncServices.js` | gate-checkout, checkout-sync, exit-status | Service logic for gate checkout processing and offline sync |
 | ImportExcelFileDataServices | `importExcelFIleDataServices.js` | excel-parser, bulk-import, sheet-reader, ingest | Ingests parsed Excel rows and creates database records with validation |

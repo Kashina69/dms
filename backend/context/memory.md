@@ -61,5 +61,6 @@ The **Depot & Ammunition Dispatch Management System (DMS)** manages secure milit
 - **Error Handling**: Controller functions wrap logic in `try ... catch` blocks and return 500 status via `responseHandler`.
 - **Soft Deletion**: Multi-entity purge routines handle cascade logic gracefully where required; series updates do not purge or soft-delete formations or module tables.
 - **Pagination with Joins**: When using `findAndCountAll` with 1-to-many associations (e.g. `driver_vehicle_details` joined to `assigned_lts_issue_voucher_details`, `skt_details`, `skt_varieties`), ALWAYS specify `distinct: true, col: 'id'` so Sequelize counts distinct parent records rather than multiplied joined rows.
+- **Physical Loading & Tonnage Calculation Rule**: `variety_load_details` records start as `load_status = 'Pending'` upon LTS voucher creation/import as unfulfilled requisition targets. Only lots transitioning to `Partially Loaded` or `Loaded` represent cargo actually loaded onto vehicles. Stored procedure `sp_amk_report` and Tonnage Report exports strictly filter `load_status != 'Pending'` with `0` fallback (`COALESCE(SUM(lot_quantity), 0)`), ensuring items with 0 loaded goods report `0.00` quantity and `0.00` tonnage.
 - **Code Cleanliness**: No comments in code files. Maintain max 200-500 lines per file.
 
